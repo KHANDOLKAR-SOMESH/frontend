@@ -26,7 +26,7 @@ export default function Home() {
     setError("");
     try {
       const response = await axios.get(
-        `http://localhost:5000/analyze?url=${encodeURIComponent(url)}`
+        `https://ytanalyser-o4qw.onrender.com/analyze?url=${encodeURIComponent(url)}`
       );
       setData(response.data);
     } catch (err) {
